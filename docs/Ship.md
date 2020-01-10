@@ -10,8 +10,8 @@ Name | Type | Description | Notes
 **vesselCategory** | **String** |  | [optional] 
 **grossTonnage** | **Number** |  | [optional] 
 **amountCargo** | **Number** |  | [optional] 
+**waste** | [**Waste**](Waste.md) |  | [optional] 
 **atmosphereEmission** | [**AtmosphereEmission**](AtmosphereEmission.md) |  | [optional] 
 **wasteWaterEmission** | [**WasteWaterEmission**](WasteWaterEmission.md) |  | [optional] 
-**waste** | [**Waste**](Waste.md) |  | [optional] 
 
 

@@ -68,12 +68,12 @@
         obj.grossTonnage = ApiClient.convertToType(data['grossTonnage'], 'Number');
       if (data.hasOwnProperty('amountCargo'))
         obj.amountCargo = ApiClient.convertToType(data['amountCargo'], 'Number');
+      if (data.hasOwnProperty('waste'))
+        obj.waste = Waste.constructFromObject(data['waste']);
       if (data.hasOwnProperty('atmosphereEmission'))
         obj.atmosphereEmission = AtmosphereEmission.constructFromObject(data['atmosphereEmission']);
       if (data.hasOwnProperty('wasteWaterEmission'))
         obj.wasteWaterEmission = WasteWaterEmission.constructFromObject(data['wasteWaterEmission']);
-      if (data.hasOwnProperty('waste'))
-        obj.waste = Waste.constructFromObject(data['waste']);
     }
     return obj;
   }
@@ -114,6 +114,11 @@
   exports.prototype.amountCargo = undefined;
 
   /**
+   * @member {module:model/Waste} waste
+   */
+  exports.prototype.waste = undefined;
+
+  /**
    * @member {module:model/AtmosphereEmission} atmosphereEmission
    */
   exports.prototype.atmosphereEmission = undefined;
@@ -122,11 +127,6 @@
    * @member {module:model/WasteWaterEmission} wasteWaterEmission
    */
   exports.prototype.wasteWaterEmission = undefined;
-
-  /**
-   * @member {module:model/Waste} waste
-   */
-  exports.prototype.waste = undefined;
 
   return exports;
 

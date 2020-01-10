@@ -48,17 +48,17 @@
           body.berthBykWh.units = "";
           body.berthBykWh.co2 = 0.0;
           body.berthBykWh.nox = 0.0;
+          body.berthBykWh.so2 = 0.0;
           body.berthBykWh.hc = 0.0;
           body.berthBykWh.pm = 0.0;
-          body.berthBykWh.so2 = 0.0;
           body.manouvringBykWh = new Peidemo.AirEmissionUnit();
           body.manouvringBykWh.operation = "";
           body.manouvringBykWh.units = "";
           body.manouvringBykWh.co2 = 0.0;
           body.manouvringBykWh.nox = 0.0;
+          body.manouvringBykWh.so2 = 0.0;
           body.manouvringBykWh.hc = 0.0;
           body.manouvringBykWh.pm = 0.0;
-          body.manouvringBykWh.so2 = 0.0;
 
           instance.createAirEmission(body, function(error, data, response) {
             if (error) {
@@ -82,12 +82,12 @@
               expect(data.berthBykWh.co2).to.be(0.0);
               expect(data.berthBykWh.nox).to.be.a('number');
               expect(data.berthBykWh.nox).to.be(0.0);
+              expect(data.berthBykWh.so2).to.be.a('number');
+              expect(data.berthBykWh.so2).to.be(0.0);
               expect(data.berthBykWh.hc).to.be.a('number');
               expect(data.berthBykWh.hc).to.be(0.0);
               expect(data.berthBykWh.pm).to.be.a('number');
               expect(data.berthBykWh.pm).to.be(0.0);
-              expect(data.berthBykWh.so2).to.be.a('number');
-              expect(data.berthBykWh.so2).to.be(0.0);
             expect(data.manouvringBykWh).to.be.a(Peidemo.AirEmissionUnit);
                   expect(data.manouvringBykWh.operation).to.be.a('string');
               expect(data.manouvringBykWh.operation).to.be("");
@@ -97,12 +97,12 @@
               expect(data.manouvringBykWh.co2).to.be(0.0);
               expect(data.manouvringBykWh.nox).to.be.a('number');
               expect(data.manouvringBykWh.nox).to.be(0.0);
+              expect(data.manouvringBykWh.so2).to.be.a('number');
+              expect(data.manouvringBykWh.so2).to.be(0.0);
               expect(data.manouvringBykWh.hc).to.be.a('number');
               expect(data.manouvringBykWh.hc).to.be(0.0);
               expect(data.manouvringBykWh.pm).to.be.a('number');
               expect(data.manouvringBykWh.pm).to.be(0.0);
-              expect(data.manouvringBykWh.so2).to.be.a('number');
-              expect(data.manouvringBykWh.so2).to.be(0.0);
 
             done();
           });
@@ -158,12 +158,12 @@
               expect(data.berthBykWh.co2).to.be(0.0);
               expect(data.berthBykWh.nox).to.be.a('number');
               expect(data.berthBykWh.nox).to.be(0.0);
+              expect(data.berthBykWh.so2).to.be.a('number');
+              expect(data.berthBykWh.so2).to.be(0.0);
               expect(data.berthBykWh.hc).to.be.a('number');
               expect(data.berthBykWh.hc).to.be(0.0);
               expect(data.berthBykWh.pm).to.be.a('number');
               expect(data.berthBykWh.pm).to.be(0.0);
-              expect(data.berthBykWh.so2).to.be.a('number');
-              expect(data.berthBykWh.so2).to.be(0.0);
             expect(data.manouvringBykWh).to.be.a(Peidemo.AirEmissionUnit);
                   expect(data.manouvringBykWh.operation).to.be.a('string');
               expect(data.manouvringBykWh.operation).to.be("");
@@ -173,12 +173,12 @@
               expect(data.manouvringBykWh.co2).to.be(0.0);
               expect(data.manouvringBykWh.nox).to.be.a('number');
               expect(data.manouvringBykWh.nox).to.be(0.0);
+              expect(data.manouvringBykWh.so2).to.be.a('number');
+              expect(data.manouvringBykWh.so2).to.be(0.0);
               expect(data.manouvringBykWh.hc).to.be.a('number');
               expect(data.manouvringBykWh.hc).to.be(0.0);
               expect(data.manouvringBykWh.pm).to.be.a('number');
               expect(data.manouvringBykWh.pm).to.be(0.0);
-              expect(data.manouvringBykWh.so2).to.be.a('number');
-              expect(data.manouvringBykWh.so2).to.be(0.0);
 
             done();
           });
@@ -221,12 +221,12 @@
                 expect(data.berthBykWh.co2).to.be(0.0);
                 expect(data.berthBykWh.nox).to.be.a('number');
                 expect(data.berthBykWh.nox).to.be(0.0);
+                expect(data.berthBykWh.so2).to.be.a('number');
+                expect(data.berthBykWh.so2).to.be(0.0);
                 expect(data.berthBykWh.hc).to.be.a('number');
                 expect(data.berthBykWh.hc).to.be(0.0);
                 expect(data.berthBykWh.pm).to.be.a('number');
                 expect(data.berthBykWh.pm).to.be(0.0);
-                expect(data.berthBykWh.so2).to.be.a('number');
-                expect(data.berthBykWh.so2).to.be(0.0);
               expect(data.manouvringBykWh).to.be.a(Peidemo.AirEmissionUnit);
                     expect(data.manouvringBykWh.operation).to.be.a('string');
                 expect(data.manouvringBykWh.operation).to.be("");
@@ -236,12 +236,12 @@
                 expect(data.manouvringBykWh.co2).to.be(0.0);
                 expect(data.manouvringBykWh.nox).to.be.a('number');
                 expect(data.manouvringBykWh.nox).to.be(0.0);
+                expect(data.manouvringBykWh.so2).to.be.a('number');
+                expect(data.manouvringBykWh.so2).to.be(0.0);
                 expect(data.manouvringBykWh.hc).to.be.a('number');
                 expect(data.manouvringBykWh.hc).to.be(0.0);
                 expect(data.manouvringBykWh.pm).to.be.a('number');
                 expect(data.manouvringBykWh.pm).to.be(0.0);
-                expect(data.manouvringBykWh.so2).to.be.a('number');
-                expect(data.manouvringBykWh.so2).to.be(0.0);
             }
 
             done();
@@ -264,17 +264,17 @@
           body.berthBykWh.units = "";
           body.berthBykWh.co2 = 0.0;
           body.berthBykWh.nox = 0.0;
+          body.berthBykWh.so2 = 0.0;
           body.berthBykWh.hc = 0.0;
           body.berthBykWh.pm = 0.0;
-          body.berthBykWh.so2 = 0.0;
           body.manouvringBykWh = new Peidemo.AirEmissionUnit();
           body.manouvringBykWh.operation = "";
           body.manouvringBykWh.units = "";
           body.manouvringBykWh.co2 = 0.0;
           body.manouvringBykWh.nox = 0.0;
+          body.manouvringBykWh.so2 = 0.0;
           body.manouvringBykWh.hc = 0.0;
           body.manouvringBykWh.pm = 0.0;
-          body.manouvringBykWh.so2 = 0.0;
 
           instance.updateAirEmission(body, function(error, data, response) {
             if (error) {
@@ -298,12 +298,12 @@
               expect(data.berthBykWh.co2).to.be(0.0);
               expect(data.berthBykWh.nox).to.be.a('number');
               expect(data.berthBykWh.nox).to.be(0.0);
+              expect(data.berthBykWh.so2).to.be.a('number');
+              expect(data.berthBykWh.so2).to.be(0.0);
               expect(data.berthBykWh.hc).to.be.a('number');
               expect(data.berthBykWh.hc).to.be(0.0);
               expect(data.berthBykWh.pm).to.be.a('number');
               expect(data.berthBykWh.pm).to.be(0.0);
-              expect(data.berthBykWh.so2).to.be.a('number');
-              expect(data.berthBykWh.so2).to.be(0.0);
             expect(data.manouvringBykWh).to.be.a(Peidemo.AirEmissionUnit);
                   expect(data.manouvringBykWh.operation).to.be.a('string');
               expect(data.manouvringBykWh.operation).to.be("");
@@ -313,12 +313,12 @@
               expect(data.manouvringBykWh.co2).to.be(0.0);
               expect(data.manouvringBykWh.nox).to.be.a('number');
               expect(data.manouvringBykWh.nox).to.be(0.0);
+              expect(data.manouvringBykWh.so2).to.be.a('number');
+              expect(data.manouvringBykWh.so2).to.be(0.0);
               expect(data.manouvringBykWh.hc).to.be.a('number');
               expect(data.manouvringBykWh.hc).to.be(0.0);
               expect(data.manouvringBykWh.pm).to.be.a('number');
               expect(data.manouvringBykWh.pm).to.be(0.0);
-              expect(data.manouvringBykWh.so2).to.be.a('number');
-              expect(data.manouvringBykWh.so2).to.be(0.0);
 
             done();
           });

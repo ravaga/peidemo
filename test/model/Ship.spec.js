@@ -82,6 +82,12 @@
         // expect(instance.amountCargo).to.be(expectedValueLiteral);
       });
 
+      it('should have the property waste (base name: "waste")', function() {
+        // TODO: update the code to test the property waste
+        expect(instance).to.have.property('waste');
+        // expect(instance.waste).to.be(expectedValueLiteral);
+      });
+
       it('should have the property atmosphereEmission (base name: "atmosphereEmission")', function() {
         // TODO: update the code to test the property atmosphereEmission
         expect(instance).to.have.property('atmosphereEmission');
@@ -92,12 +98,6 @@
         // TODO: update the code to test the property wasteWaterEmission
         expect(instance).to.have.property('wasteWaterEmission');
         // expect(instance.wasteWaterEmission).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property waste (base name: "waste")', function() {
-        // TODO: update the code to test the property waste
-        expect(instance).to.have.property('waste');
-        // expect(instance.waste).to.be(expectedValueLiteral);
       });
 
     });

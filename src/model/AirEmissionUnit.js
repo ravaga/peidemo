@@ -62,12 +62,12 @@
         obj.co2 = ApiClient.convertToType(data['co2'], 'Number');
       if (data.hasOwnProperty('nox'))
         obj.nox = ApiClient.convertToType(data['nox'], 'Number');
+      if (data.hasOwnProperty('so2'))
+        obj.so2 = ApiClient.convertToType(data['so2'], 'Number');
       if (data.hasOwnProperty('hc'))
         obj.hc = ApiClient.convertToType(data['hc'], 'Number');
       if (data.hasOwnProperty('pm'))
         obj.pm = ApiClient.convertToType(data['pm'], 'Number');
-      if (data.hasOwnProperty('so2'))
-        obj.so2 = ApiClient.convertToType(data['so2'], 'Number');
     }
     return obj;
   }
@@ -93,6 +93,11 @@
   exports.prototype.nox = undefined;
 
   /**
+   * @member {Number} so2
+   */
+  exports.prototype.so2 = undefined;
+
+  /**
    * @member {Number} hc
    */
   exports.prototype.hc = undefined;
@@ -101,11 +106,6 @@
    * @member {Number} pm
    */
   exports.prototype.pm = undefined;
-
-  /**
-   * @member {Number} so2
-   */
-  exports.prototype.so2 = undefined;
 
   return exports;
 

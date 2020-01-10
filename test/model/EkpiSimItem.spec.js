@@ -94,6 +94,12 @@
         // expect(instance.valueNorm).to.be(expectedValueLiteral);
       });
 
+      it('should have the property unit (base name: "unit")', function() {
+        // TODO: update the code to test the property unit
+        expect(instance).to.have.property('unit');
+        // expect(instance.unit).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

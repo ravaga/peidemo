@@ -58,44 +58,44 @@
         obj._array = ApiClient.convertToType(data['array'], 'Boolean');
       if (data.hasOwnProperty('null'))
         obj._null = ApiClient.convertToType(data['null'], 'Boolean');
+      if (data.hasOwnProperty('containerNode'))
+        obj.containerNode = ApiClient.convertToType(data['containerNode'], 'Boolean');
+      if (data.hasOwnProperty('missingNode'))
+        obj.missingNode = ApiClient.convertToType(data['missingNode'], 'Boolean');
+      if (data.hasOwnProperty('floatingPointNumber'))
+        obj.floatingPointNumber = ApiClient.convertToType(data['floatingPointNumber'], 'Boolean');
+      if (data.hasOwnProperty('integralNumber'))
+        obj.integralNumber = ApiClient.convertToType(data['integralNumber'], 'Boolean');
+      if (data.hasOwnProperty('valueNode'))
+        obj.valueNode = ApiClient.convertToType(data['valueNode'], 'Boolean');
       if (data.hasOwnProperty('float'))
         obj._float = ApiClient.convertToType(data['float'], 'Boolean');
       if (data.hasOwnProperty('nodeType'))
         obj.nodeType = ApiClient.convertToType(data['nodeType'], 'String');
-      if (data.hasOwnProperty('containerNode'))
-        obj.containerNode = ApiClient.convertToType(data['containerNode'], 'Boolean');
-      if (data.hasOwnProperty('valueNode'))
-        obj.valueNode = ApiClient.convertToType(data['valueNode'], 'Boolean');
-      if (data.hasOwnProperty('missingNode'))
-        obj.missingNode = ApiClient.convertToType(data['missingNode'], 'Boolean');
+      if (data.hasOwnProperty('number'))
+        obj._number = ApiClient.convertToType(data['number'], 'Boolean');
+      if (data.hasOwnProperty('int'))
+        obj._int = ApiClient.convertToType(data['int'], 'Boolean');
       if (data.hasOwnProperty('object'))
         obj._object = ApiClient.convertToType(data['object'], 'Boolean');
       if (data.hasOwnProperty('pojo'))
         obj.pojo = ApiClient.convertToType(data['pojo'], 'Boolean');
-      if (data.hasOwnProperty('binary'))
-        obj.binary = ApiClient.convertToType(data['binary'], 'Boolean');
-      if (data.hasOwnProperty('long'))
-        obj._long = ApiClient.convertToType(data['long'], 'Boolean');
       if (data.hasOwnProperty('boolean'))
         obj._boolean = ApiClient.convertToType(data['boolean'], 'Boolean');
-      if (data.hasOwnProperty('bigInteger'))
-        obj.bigInteger = ApiClient.convertToType(data['bigInteger'], 'Boolean');
-      if (data.hasOwnProperty('integralNumber'))
-        obj.integralNumber = ApiClient.convertToType(data['integralNumber'], 'Boolean');
-      if (data.hasOwnProperty('double'))
-        obj._double = ApiClient.convertToType(data['double'], 'Boolean');
+      if (data.hasOwnProperty('long'))
+        obj._long = ApiClient.convertToType(data['long'], 'Boolean');
+      if (data.hasOwnProperty('binary'))
+        obj.binary = ApiClient.convertToType(data['binary'], 'Boolean');
       if (data.hasOwnProperty('textual'))
         obj.textual = ApiClient.convertToType(data['textual'], 'Boolean');
-      if (data.hasOwnProperty('short'))
-        obj._short = ApiClient.convertToType(data['short'], 'Boolean');
       if (data.hasOwnProperty('bigDecimal'))
         obj.bigDecimal = ApiClient.convertToType(data['bigDecimal'], 'Boolean');
-      if (data.hasOwnProperty('number'))
-        obj._number = ApiClient.convertToType(data['number'], 'Boolean');
-      if (data.hasOwnProperty('floatingPointNumber'))
-        obj.floatingPointNumber = ApiClient.convertToType(data['floatingPointNumber'], 'Boolean');
-      if (data.hasOwnProperty('int'))
-        obj._int = ApiClient.convertToType(data['int'], 'Boolean');
+      if (data.hasOwnProperty('short'))
+        obj._short = ApiClient.convertToType(data['short'], 'Boolean');
+      if (data.hasOwnProperty('double'))
+        obj._double = ApiClient.convertToType(data['double'], 'Boolean');
+      if (data.hasOwnProperty('bigInteger'))
+        obj.bigInteger = ApiClient.convertToType(data['bigInteger'], 'Boolean');
     }
     return obj;
   }
@@ -111,6 +111,31 @@
   exports.prototype._null = undefined;
 
   /**
+   * @member {Boolean} containerNode
+   */
+  exports.prototype.containerNode = undefined;
+
+  /**
+   * @member {Boolean} missingNode
+   */
+  exports.prototype.missingNode = undefined;
+
+  /**
+   * @member {Boolean} floatingPointNumber
+   */
+  exports.prototype.floatingPointNumber = undefined;
+
+  /**
+   * @member {Boolean} integralNumber
+   */
+  exports.prototype.integralNumber = undefined;
+
+  /**
+   * @member {Boolean} valueNode
+   */
+  exports.prototype.valueNode = undefined;
+
+  /**
    * @member {Boolean} _float
    */
   exports.prototype._float = undefined;
@@ -121,19 +146,14 @@
   exports.prototype.nodeType = undefined;
 
   /**
-   * @member {Boolean} containerNode
+   * @member {Boolean} _number
    */
-  exports.prototype.containerNode = undefined;
+  exports.prototype._number = undefined;
 
   /**
-   * @member {Boolean} valueNode
+   * @member {Boolean} _int
    */
-  exports.prototype.valueNode = undefined;
-
-  /**
-   * @member {Boolean} missingNode
-   */
-  exports.prototype.missingNode = undefined;
+  exports.prototype._int = undefined;
 
   /**
    * @member {Boolean} _object
@@ -146,9 +166,9 @@
   exports.prototype.pojo = undefined;
 
   /**
-   * @member {Boolean} binary
+   * @member {Boolean} _boolean
    */
-  exports.prototype.binary = undefined;
+  exports.prototype._boolean = undefined;
 
   /**
    * @member {Boolean} _long
@@ -156,24 +176,9 @@
   exports.prototype._long = undefined;
 
   /**
-   * @member {Boolean} _boolean
+   * @member {Boolean} binary
    */
-  exports.prototype._boolean = undefined;
-
-  /**
-   * @member {Boolean} bigInteger
-   */
-  exports.prototype.bigInteger = undefined;
-
-  /**
-   * @member {Boolean} integralNumber
-   */
-  exports.prototype.integralNumber = undefined;
-
-  /**
-   * @member {Boolean} _double
-   */
-  exports.prototype._double = undefined;
+  exports.prototype.binary = undefined;
 
   /**
    * @member {Boolean} textual
@@ -181,29 +186,24 @@
   exports.prototype.textual = undefined;
 
   /**
-   * @member {Boolean} _short
-   */
-  exports.prototype._short = undefined;
-
-  /**
    * @member {Boolean} bigDecimal
    */
   exports.prototype.bigDecimal = undefined;
 
   /**
-   * @member {Boolean} _number
+   * @member {Boolean} _short
    */
-  exports.prototype._number = undefined;
+  exports.prototype._short = undefined;
 
   /**
-   * @member {Boolean} floatingPointNumber
+   * @member {Boolean} _double
    */
-  exports.prototype.floatingPointNumber = undefined;
+  exports.prototype._double = undefined;
 
   /**
-   * @member {Boolean} _int
+   * @member {Boolean} bigInteger
    */
-  exports.prototype._int = undefined;
+  exports.prototype.bigInteger = undefined;
 
 
   /**

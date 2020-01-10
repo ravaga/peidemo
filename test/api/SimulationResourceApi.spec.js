@@ -65,6 +65,7 @@
           body.output.items[0].ekpis[0].parentSubindex = "";
           body.output.items[0].ekpis[0].value = 0.0;
           body.output.items[0].ekpis[0].valueNorm = 0.0;
+          body.output.items[0].ekpis[0].unit = "";
           body.output.items[0].subindices = [new Peidemo.SubindexSimItem()];
           body.output.items[0].subindices[0].name = "";
           body.output.items[0].subindices[0].description = "";
@@ -86,6 +87,7 @@
           body.output.averageOutput.ekpis[0].parentSubindex = "";
           body.output.averageOutput.ekpis[0].value = 0.0;
           body.output.averageOutput.ekpis[0].valueNorm = 0.0;
+          body.output.averageOutput.ekpis[0].unit = "";
           body.output.averageOutput.subindices = [new Peidemo.SubindexSimItem()];
           body.output.averageOutput.subindices[0].name = "";
           body.output.averageOutput.subindices[0].description = "";
@@ -174,6 +176,8 @@
                       expect(data.value).to.be(0.0);
                       expect(data.valueNorm).to.be.a('number');
                       expect(data.valueNorm).to.be(0.0);
+                      expect(data.unit).to.be.a('string');
+                      expect(data.unit).to.be("");
                     }
                   }
                   {
@@ -239,6 +243,8 @@
                     expect(data.value).to.be(0.0);
                     expect(data.valueNorm).to.be.a('number');
                     expect(data.valueNorm).to.be(0.0);
+                    expect(data.unit).to.be.a('string');
+                    expect(data.unit).to.be("");
                   }
                 }
                 {
@@ -305,25 +311,25 @@
           var body = new Peidemo.JsonNode();
           body._array = false;
           body._null = false;
+          body.containerNode = false;
+          body.missingNode = false;
+          body.floatingPointNumber = false;
+          body.integralNumber = false;
+          body.valueNode = false;
           body._float = false;
           body.nodeType = "ARRAY";
-          body.containerNode = false;
-          body.valueNode = false;
-          body.missingNode = false;
+          body._number = false;
+          body._int = false;
           body._object = false;
           body.pojo = false;
-          body.binary = false;
-          body._long = false;
           body._boolean = false;
-          body.bigInteger = false;
-          body.integralNumber = false;
-          body._double = false;
+          body._long = false;
+          body.binary = false;
           body.textual = false;
-          body._short = false;
           body.bigDecimal = false;
-          body._number = false;
-          body.floatingPointNumber = false;
-          body._int = false;
+          body._short = false;
+          body._double = false;
+          body.bigInteger = false;
 
           instance.executeModel(id, body, function(error, data, response) {
             if (error) {
@@ -424,6 +430,8 @@
                       expect(data.value).to.be(0.0);
                       expect(data.valueNorm).to.be.a('number');
                       expect(data.valueNorm).to.be(0.0);
+                      expect(data.unit).to.be.a('string');
+                      expect(data.unit).to.be("");
                     }
                   }
                   {
@@ -489,6 +497,8 @@
                     expect(data.value).to.be(0.0);
                     expect(data.valueNorm).to.be.a('number');
                     expect(data.valueNorm).to.be(0.0);
+                    expect(data.unit).to.be.a('string');
+                    expect(data.unit).to.be("");
                   }
                 }
                 {
@@ -618,6 +628,8 @@
                         expect(data.value).to.be(0.0);
                         expect(data.valueNorm).to.be.a('number');
                         expect(data.valueNorm).to.be(0.0);
+                        expect(data.unit).to.be.a('string');
+                        expect(data.unit).to.be("");
                       }
                     }
                     {
@@ -683,6 +695,8 @@
                       expect(data.value).to.be(0.0);
                       expect(data.valueNorm).to.be.a('number');
                       expect(data.valueNorm).to.be(0.0);
+                      expect(data.unit).to.be.a('string');
+                      expect(data.unit).to.be("");
                     }
                   }
                   {
@@ -753,6 +767,7 @@
           body.output.items[0].ekpis[0].parentSubindex = "";
           body.output.items[0].ekpis[0].value = 0.0;
           body.output.items[0].ekpis[0].valueNorm = 0.0;
+          body.output.items[0].ekpis[0].unit = "";
           body.output.items[0].subindices = [new Peidemo.SubindexSimItem()];
           body.output.items[0].subindices[0].name = "";
           body.output.items[0].subindices[0].description = "";
@@ -774,6 +789,7 @@
           body.output.averageOutput.ekpis[0].parentSubindex = "";
           body.output.averageOutput.ekpis[0].value = 0.0;
           body.output.averageOutput.ekpis[0].valueNorm = 0.0;
+          body.output.averageOutput.ekpis[0].unit = "";
           body.output.averageOutput.subindices = [new Peidemo.SubindexSimItem()];
           body.output.averageOutput.subindices[0].name = "";
           body.output.averageOutput.subindices[0].description = "";
@@ -862,6 +878,8 @@
                       expect(data.value).to.be(0.0);
                       expect(data.valueNorm).to.be.a('number');
                       expect(data.valueNorm).to.be(0.0);
+                      expect(data.unit).to.be.a('string');
+                      expect(data.unit).to.be("");
                     }
                   }
                   {
@@ -927,6 +945,8 @@
                     expect(data.value).to.be(0.0);
                     expect(data.valueNorm).to.be.a('number');
                     expect(data.valueNorm).to.be(0.0);
+                    expect(data.unit).to.be.a('string');
+                    expect(data.unit).to.be("");
                   }
                 }
                 {

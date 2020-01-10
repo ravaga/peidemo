@@ -64,6 +64,12 @@
         // expect(instance.nox).to.be(expectedValueLiteral);
       });
 
+      it('should have the property so2 (base name: "so2")', function() {
+        // TODO: update the code to test the property so2
+        expect(instance).to.have.property('so2');
+        // expect(instance.so2).to.be(expectedValueLiteral);
+      });
+
       it('should have the property hc (base name: "hc")', function() {
         // TODO: update the code to test the property hc
         expect(instance).to.have.property('hc');
@@ -74,12 +80,6 @@
         // TODO: update the code to test the property pm
         expect(instance).to.have.property('pm');
         // expect(instance.pm).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property so2 (base name: "so2")', function() {
-        // TODO: update the code to test the property so2
-        expect(instance).to.have.property('so2');
-        // expect(instance.so2).to.be(expectedValueLiteral);
       });
 
     });

@@ -11,5 +11,6 @@ Name | Type | Description | Notes
 **min** | **Number** |  | [optional] 
 **max** | **Number** |  | [optional] 
 **parentSubindex** | **String** |  | [optional] 
+**unit** | **String** |  | [optional] 
 
 

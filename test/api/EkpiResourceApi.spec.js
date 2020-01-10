@@ -48,6 +48,7 @@
           body.min = 0.0;
           body.max = 0.0;
           body.parentSubindex = "";
+          body.unit = "";
 
           instance.createEkpi(body, function(error, data, response) {
             if (error) {
@@ -72,6 +73,8 @@
             expect(data.max).to.be(0.0);
             expect(data.parentSubindex).to.be.a('string');
             expect(data.parentSubindex).to.be("");
+            expect(data.unit).to.be.a('string');
+            expect(data.unit).to.be("");
 
             done();
           });
@@ -128,6 +131,8 @@
             expect(data.max).to.be(0.0);
             expect(data.parentSubindex).to.be.a('string');
             expect(data.parentSubindex).to.be("");
+            expect(data.unit).to.be.a('string');
+            expect(data.unit).to.be("");
 
             done();
           });
@@ -171,6 +176,8 @@
               expect(data.max).to.be(0.0);
               expect(data.parentSubindex).to.be.a('string');
               expect(data.parentSubindex).to.be("");
+              expect(data.unit).to.be.a('string');
+              expect(data.unit).to.be("");
             }
 
             done();
@@ -193,6 +200,7 @@
           body.min = 0.0;
           body.max = 0.0;
           body.parentSubindex = "";
+          body.unit = "";
 
           instance.updateEkpi(body, function(error, data, response) {
             if (error) {
@@ -217,6 +225,8 @@
             expect(data.max).to.be(0.0);
             expect(data.parentSubindex).to.be.a('string');
             expect(data.parentSubindex).to.be("");
+            expect(data.unit).to.be.a('string');
+            expect(data.unit).to.be("");
 
             done();
           });

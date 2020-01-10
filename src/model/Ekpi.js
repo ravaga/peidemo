@@ -70,6 +70,8 @@
         obj.max = ApiClient.convertToType(data['max'], 'Number');
       if (data.hasOwnProperty('parentSubindex'))
         obj.parentSubindex = ApiClient.convertToType(data['parentSubindex'], 'String');
+      if (data.hasOwnProperty('unit'))
+        obj.unit = ApiClient.convertToType(data['unit'], 'String');
     }
     return obj;
   }
@@ -113,6 +115,11 @@
    * @member {String} parentSubindex
    */
   exports.prototype.parentSubindex = undefined;
+
+  /**
+   * @member {String} unit
+   */
+  exports.prototype.unit = undefined;
 
   return exports;
 

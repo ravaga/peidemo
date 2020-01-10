@@ -12,5 +12,6 @@ Name | Type | Description | Notes
 **parentSubindex** | **String** |  | [optional] 
 **value** | **Number** |  | [optional] 
 **valueNorm** | **Number** |  | [optional] 
+**unit** | **String** |  | [optional] 
 
 

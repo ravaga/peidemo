@@ -72,6 +72,8 @@
         obj.value = ApiClient.convertToType(data['value'], 'Number');
       if (data.hasOwnProperty('valueNorm'))
         obj.valueNorm = ApiClient.convertToType(data['valueNorm'], 'Number');
+      if (data.hasOwnProperty('unit'))
+        obj.unit = ApiClient.convertToType(data['unit'], 'String');
     }
     return obj;
   }
@@ -120,6 +122,11 @@
    * @member {Number} valueNorm
    */
   exports.prototype.valueNorm = undefined;
+
+  /**
+   * @member {String} unit
+   */
+  exports.prototype.unit = undefined;
 
   return exports;
 
